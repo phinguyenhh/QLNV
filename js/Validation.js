@@ -31,7 +31,7 @@ function Validation() {
 
     }
     this.checkNumberTK = function (value, spanID, message) {
-        var pattern = /^[0-9]+$/
+        var pattern = /^[a-zA-Z0-9 ]*$/
         if (value.match(pattern) && value.length >= 4 && value.length <= 6) {
 
             getELE(spanID).innerHTML = "";
